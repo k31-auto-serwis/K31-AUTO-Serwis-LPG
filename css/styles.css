@@ -201,6 +201,7 @@ h3{font-size:1.4rem;letter-spacing:0}
 .split__media{aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);
   background:linear-gradient(135deg,#1b1d21,#0e0f12);position:relative;display:grid;place-items:center}
 .split__media .plate{font-family:var(--font-display);font-size:5rem;color:rgba(255,255,255,.05);text-transform:uppercase}
+.split__media img{width:100%;height:100%;object-fit:cover;object-position:center 28%;display:block}
 .checklist{display:flex;flex-direction:column;gap:14px;margin-top:24px}
 .checklist li{display:flex;gap:12px;align-items:flex-start;color:var(--text);font-weight:600}
 .checklist svg{width:22px;height:22px;color:var(--orange);flex-shrink:0;margin-top:2px}
