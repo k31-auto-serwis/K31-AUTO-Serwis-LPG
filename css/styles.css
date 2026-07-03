@@ -341,3 +341,16 @@ h3{font-size:1.4rem;letter-spacing:0}
   .footer__top{grid-template-columns:1fr}
   body{padding-bottom:64px}
 }
+
+/* ---------- language switcher ---------- */
+.langsw{display:inline-flex;gap:2px;align-items:center}
+.langsw a{padding:5px 8px;font-family:var(--font-body);font-weight:800;font-size:.72rem;
+  letter-spacing:.06em;color:var(--muted-2);border-radius:7px;line-height:1;transition:color .15s,background .15s}
+.langsw a:hover{color:var(--text);background:rgba(255,255,255,.06)}
+html[lang="pl"] .langsw a[data-lang="pl"],
+html[lang="uk"] .langsw a[data-lang="uk"],
+html[lang="ru"] .langsw a[data-lang="ru"]{background:var(--orange);color:#15100A}
+.langsw--m{margin-top:18px;gap:6px}
+.langsw--m a{padding:9px 14px;font-size:.9rem;border:1px solid var(--border-2)}
+@media(max-width:900px){.header__cta .langsw{display:none}}
+@media(min-width:901px){.mobile-menu .langsw--m{display:none}}

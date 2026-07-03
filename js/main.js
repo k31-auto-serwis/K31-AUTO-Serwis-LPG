@@ -2,6 +2,15 @@
 (function () {
   "use strict";
 
+  /* i18n for dynamic strings */
+  var LANG = document.documentElement.lang || "uk";
+  var I18N = {
+    uk: { sending: "Надсилаємо…", err: "Не вдалося надіслати заявку. Зателефонуйте нам: +48 570 789 084" },
+    pl: { sending: "Wysyłanie…", err: "Nie udało się wysłać zgłoszenia. Zadzwoń do nas: +48 570 789 084" },
+    ru: { sending: "Отправляем…", err: "Не удалось отправить заявку. Позвоните нам: +48 570 789 084" }
+  };
+  var T = I18N[LANG] || I18N.uk;
+
   /* sticky header state */
   var header = document.querySelector(".header");
   function onScroll() {
@@ -100,7 +109,7 @@
       };
 
       var orig = btn ? btn.textContent : "";
-      if (btn) { btn.disabled = true; btn.textContent = "Надсилаємо…"; }
+      if (btn) { btn.disabled = true; btn.textContent = T.sending; }
 
       fetch("/api/lead", {
         method: "POST",
@@ -116,7 +125,7 @@
         .catch(function () {
           if (btn) { btn.disabled = false; btn.textContent = orig; }
           if (err) {
-            err.textContent = "Не вдалося надіслати заявку. Зателефонуйте нам: +48 570 789 084";
+            err.textContent = T.err;
             err.classList.add("show");
           }
         });
