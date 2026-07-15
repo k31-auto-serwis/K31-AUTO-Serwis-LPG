@@ -2,6 +2,8 @@
 (function () {
   "use strict";
 
+  var T0 = Date.now(); /* page load — used for bot submit-timing check */
+
   /* i18n for dynamic strings */
   var LANG = document.documentElement.lang || "uk";
   var I18N = {
@@ -142,7 +144,8 @@
         service: val("service"),
         msg: val("msg"),
         website: hp ? hp.value : "",
-        page: location.pathname
+        page: location.pathname,
+        elapsed_ms: Date.now() - T0
       };
 
       var orig = btn ? btn.textContent : "";
