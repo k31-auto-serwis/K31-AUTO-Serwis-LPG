@@ -11,6 +11,31 @@
   };
   var T = I18N[LANG] || I18N.uk;
 
+  /* ---- GTM dataLayer events ---- */
+  window.dataLayer = window.dataLayer || [];
+  function dlPush(o) {
+    try { o.page_lang = LANG; o.page_path = location.pathname; window.dataLayer.push(o); } catch (e) {}
+  }
+  function zone(el) {
+    if (!el.closest) return "content";
+    if (el.closest(".header")) return "header";
+    if (el.closest(".mobile-menu")) return "mobile_menu";
+    if (el.closest(".callbar")) return "callbar";
+    if (el.closest(".footer")) return "footer";
+    if (el.closest(".hero")) return "hero";
+    return "content";
+  }
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest("a") : null;
+    if (!a) return;
+    var h = a.getAttribute("href") || "";
+    if (h.indexOf("tel:") === 0) dlPush({ event: "click_phone", link_location: zone(a) });
+    else if (h.indexOf("https://t.me/") === 0) dlPush({ event: "click_messenger", channel: "telegram", link_location: zone(a) });
+    else if (h.indexOf("viber:") === 0) dlPush({ event: "click_messenger", channel: "viber", link_location: zone(a) });
+    else if (h.indexOf("https://wa.me/") === 0) dlPush({ event: "click_messenger", channel: "whatsapp", link_location: zone(a) });
+    else if (h.indexOf("instagram.com") > -1) dlPush({ event: "click_social", channel: "instagram", link_location: zone(a) });
+  }, true);
+
   /* sticky header state */
   var header = document.querySelector(".header");
   function onScroll() {
@@ -118,11 +143,13 @@
       })
         .then(function (r) { return r.ok ? r.json() : Promise.reject(r); })
         .then(function () {
+          dlPush({ event: "lead_form_submit", form_service: payload.service });
           if (ok) ok.classList.add("show");
           form.querySelectorAll("input,select,textarea").forEach(function (f) { f.disabled = true; });
           if (btn) btn.style.display = "none";
         })
         .catch(function () {
+          dlPush({ event: "lead_form_error" });
           if (btn) { btn.disabled = false; btn.textContent = orig; }
           if (err) {
             err.textContent = T.err;
