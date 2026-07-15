@@ -16,6 +16,18 @@
   function dlPush(o) {
     try { o.page_lang = LANG; o.page_path = location.pathname; window.dataLayer.push(o); } catch (e) {}
   }
+
+  /* normalize phone to E.164 (default PL +48) for Enhanced Conversions */
+  function normalizePhone(raw) {
+    var v = String(raw == null ? "" : raw).replace(/[^\d+]/g, "");
+    if (!v) return "";
+    if (v.indexOf("00") === 0) v = "+" + v.slice(2);
+    if (v.charAt(0) !== "+") {
+      v = v.replace(/^0+/, "");
+      v = (v.indexOf("48") === 0 && v.length > 9) ? "+" + v : "+48" + v;
+    }
+    return /^\+\d{8,15}$/.test(v) ? v : "";
+  }
   function zone(el) {
     if (!el.closest) return "content";
     if (el.closest(".header")) return "header";
@@ -143,7 +155,12 @@
       })
         .then(function (r) { return r.ok ? r.json() : Promise.reject(r); })
         .then(function () {
-          dlPush({ event: "lead_form_submit", form_service: payload.service });
+          var ecPhone = normalizePhone(payload.phone);
+          dlPush({
+            event: "lead_form_submit",
+            form_service: payload.service,
+            user_data: ecPhone ? { phone_number: ecPhone } : undefined
+          });
           if (ok) ok.classList.add("show");
           form.querySelectorAll("input,select,textarea").forEach(function (f) { f.disabled = true; });
           if (btn) btn.style.display = "none";
