@@ -30,10 +30,10 @@
     if (!a) return;
     var h = a.getAttribute("href") || "";
     if (h.indexOf("tel:") === 0) dlPush({ event: "click_phone", link_location: zone(a) });
-    else if (h.indexOf("https://t.me/") === 0) dlPush({ event: "click_messenger", channel: "telegram", link_location: zone(a) });
-    else if (h.indexOf("viber:") === 0) dlPush({ event: "click_messenger", channel: "viber", link_location: zone(a) });
-    else if (h.indexOf("https://wa.me/") === 0) dlPush({ event: "click_messenger", channel: "whatsapp", link_location: zone(a) });
-    else if (h.indexOf("instagram.com") > -1) dlPush({ event: "click_social", channel: "instagram", link_location: zone(a) });
+    else if (h.indexOf("https://t.me/") === 0) dlPush({ event: "click_telegram", link_location: zone(a) });
+    else if (h.indexOf("viber:") === 0) dlPush({ event: "click_viber", link_location: zone(a) });
+    else if (h.indexOf("https://wa.me/") === 0) dlPush({ event: "click_whatsapp", link_location: zone(a) });
+    else if (h.indexOf("instagram.com") > -1) dlPush({ event: "click_instagram", link_location: zone(a) });
   }, true);
 
   /* sticky header state */
