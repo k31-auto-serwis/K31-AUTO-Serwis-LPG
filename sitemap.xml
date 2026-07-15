@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.k31autoserwis.pl/</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://www.k31autoserwis.pl/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://www.k31autoserwis.pl/uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.k31autoserwis.pl/ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.k31autoserwis.pl/"/>
+    <lastmod>2026-07-06</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.k31autoserwis.pl/uk</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://www.k31autoserwis.pl/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://www.k31autoserwis.pl/uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.k31autoserwis.pl/ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.k31autoserwis.pl/"/>
+    <lastmod>2026-07-06</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.k31autoserwis.pl/ru</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://www.k31autoserwis.pl/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://www.k31autoserwis.pl/uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.k31autoserwis.pl/ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.k31autoserwis.pl/"/>
+    <lastmod>2026-07-06</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.k31autoserwis.pl/poslugy</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://www.k31autoserwis.pl/poslugy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://www.k31autoserwis.pl/uk/poslugy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.k31autoserwis.pl/ru/poslugy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.k31autoserwis.pl/poslugy"/>
+    <lastmod>2026-07-06</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.k31autoserwis.pl/uk/poslugy</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://www.k31autoserwis.pl/poslugy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://www.k31autoserwis.pl/uk/poslugy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.k31autoserwis.pl/ru/poslugy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.k31autoserwis.pl/poslugy"/>
+    <lastmod>2026-07-06</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.k31autoserwis.pl/ru/poslugy</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://www.k31autoserwis.pl/poslugy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://www.k31autoserwis.pl/uk/poslugy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.k31autoserwis.pl/ru/poslugy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.k31autoserwis.pl/poslugy"/>
+    <lastmod>2026-07-06</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.k31autoserwis.pl/pro-nas</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://www.k31autoserwis.pl/pro-nas"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://www.k31autoserwis.pl/uk/pro-nas"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.k31autoserwis.pl/ru/pro-nas"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.k31autoserwis.pl/pro-nas"/>
+    <lastmod>2026-07-06</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.k31autoserwis.pl/uk/pro-nas</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://www.k31autoserwis.pl/pro-nas"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://www.k31autoserwis.pl/uk/pro-nas"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.k31autoserwis.pl/ru/pro-nas"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.k31autoserwis.pl/pro-nas"/>
+    <lastmod>2026-07-06</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.k31autoserwis.pl/ru/pro-nas</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://www.k31autoserwis.pl/pro-nas"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://www.k31autoserwis.pl/uk/pro-nas"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.k31autoserwis.pl/ru/pro-nas"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.k31autoserwis.pl/pro-nas"/>
+    <lastmod>2026-07-06</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.k31autoserwis.pl/kontakty</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://www.k31autoserwis.pl/kontakty"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://www.k31autoserwis.pl/uk/kontakty"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.k31autoserwis.pl/ru/kontakty"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.k31autoserwis.pl/kontakty"/>
+    <lastmod>2026-07-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.k31autoserwis.pl/uk/kontakty</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://www.k31autoserwis.pl/kontakty"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://www.k31autoserwis.pl/uk/kontakty"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.k31autoserwis.pl/ru/kontakty"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.k31autoserwis.pl/kontakty"/>
+    <lastmod>2026-07-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.k31autoserwis.pl/ru/kontakty</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://www.k31autoserwis.pl/kontakty"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://www.k31autoserwis.pl/uk/kontakty"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.k31autoserwis.pl/ru/kontakty"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.k31autoserwis.pl/kontakty"/>
+    <lastmod>2026-07-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+</urlset>
